@@ -1,0 +1,159 @@
+/* PatientDashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  border-radius: 16px;
+  padding: 32px;
+  color: white;
+}
+
+.welcome-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+.stat-card div:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-card div:last-child {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Main Grid Layout */
+.dashboard-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.medication-section,
+.calendar-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Calendar Styling */
+.calendar {
+  width: 100%;
+}
+
+.calendar-day {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.calendar-day.taken {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.calendar-day.missed {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.calendar-day.today {
+  background-color: #dbeafe;
+  border: 1px solid #60a5fa;
+}
+
+.calendar-day .tick,
+.calendar-day .dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.tick {
+  background-color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 8px;
+}
+
+.dot {
+  background-color: #f87171;
+}
+
+/* Legend */
+.legend {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-dot.green {
+  background-color: #10b981;
+}
+
+.legend-dot.red {
+  background-color: #f87171;
+}
+
+.legend-dot.blue {
+  background-color: #3b82f6;
+}

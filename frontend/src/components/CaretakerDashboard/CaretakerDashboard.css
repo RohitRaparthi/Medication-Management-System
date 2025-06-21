@@ -1,0 +1,161 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header-section {
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  padding: 24px;
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.icon-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.summary-grid > div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.metric {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tab-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab {
+  padding: 10px 16px;
+  border: none;
+  background: rgb(191, 224, 235);
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.tab.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.tab-content .card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6f9fc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.pending {
+  background-color: #f87171;
+  color: white;
+}
+
+.badge.completed {
+  background-color: #10b981;
+  color: white;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle.green {
+  background-color: #d1fae5;
+}
+
+.circle.red {
+  background-color: #fee2e2;
+}
+
+.calendar-section {
+  display: flex;
+  gap: 24px;
+}
+
+.calendar-info {
+  max-width: 300px;
+}
+
+.calendar-taken {
+  color: #10b981;
+}
+
+.calendar-missed {
+  color: #ef4444;
+}
+
+.calendar-today {
+  color: #3b82f6;
+}

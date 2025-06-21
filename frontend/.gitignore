@@ -1,0 +1,4 @@
+# node_modules and build files
+node_modules/
+.vscode/
+.DS_Store

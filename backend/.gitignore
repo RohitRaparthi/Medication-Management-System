@@ -1,0 +1,8 @@
+# dependencies and db files
+node_modules/
+.env
+*.sqlite
+*.db
+*.db-journal
+.vscode/
+.DS_Store
