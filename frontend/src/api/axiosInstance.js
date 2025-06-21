@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/', // Update this to your deployed backend URL if needed
+  baseURL: 'https://medication-management-system-42fc.onrender.com/', // Update this to your deployed backend URL if needed
 });
 
 instance.interceptors.request.use((config) => {
